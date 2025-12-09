@@ -1,0 +1,5 @@
+{
+  "name": "Taverna Room",
+  "description": "A virtual room where users can join, see a 3D 12-sided die, and roll it. The result of the roll is displayed with the user's name.",
+  "requestFramePermissions": []
+}
