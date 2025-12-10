@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D12 Virtual Room</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              cyber: {
-                dark: '#0a0a0f',
-                panel: '#13131f',
-                primary: '#7c3aed',
-                accent: '#00f0ff'
-              }
-            }
-          }
-        }
-      }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
-    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
-    "three": "https://aistudiocdn.com/three@^0.181.2",
-    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Almanach das Sombras</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body class="bg-cyber-dark text-white overflow-hidden m-0 h-screen w-screen">
-    <div id="root" class="h-screen w-screen"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body>
+  <header>
+    <h1>ALMANACH <span>DAS</span> SOMBRAS</h1>
+    <nav>
+      <a href="/game/index.html">Acessar Taverna</a>
+      <a href="#">Fábulas Recentes</a>
+      <a href="#">Patamar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="news">
+      <article>
+        <h2>🐉 Dragão avistado acima da Aldeia dos Piquis!</h2>
+        <img src="img/dragao.jpg" alt="Dragão sobrevoando aldeia">
+        <p>Habitantes alertam: braços no ar ruído. Guardas afirmam ser um lagarto imenso.</p>
+        <button>Sabir mais</button>
+      </article>
+      <article>
+        <h2>🧪 Rei estabelece tributo sobre elixires arcanos!</h2>
+        <img src="img/alquimista.jpg" alt="Alquimista sombrio">
+        <p>Magos indignados, revolta nos pórticos. 'Sem elixires, não há salvação', exclamam.</p>
+        <button>Sabir mais</button>
+      </article>
+      <article>
+        <h2>⚔️ Campeador enigmático aniquila 12 goblins só!</h2>
+        <img src="img/guerreiro.jpg" alt="Herói mascarado">
+        <p>Povo assombrado: quem é o matador mascarado que esvaiu-se logo após?</p>
+        <button>Sabir mais</button>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <section>
+        <h3>🏆 Patamar dos Jogadores</h3>
+        <ul>
+          <li>Sir Cícero — 1200 pts</li>
+          <li>Dama Élfica — 950 pts</li>
+          <li>Mago Sepulcral — 870 pts</li>
+        </ul>
+      </section>
+      <section>
+        <h3>📅 Eventos</h3>
+        <p>Grande Corte dos Ocultos — amanhã, ao crepúsculo.</p>
+      </section>
+      <section>
+        <h3>🪙 Propaganda</h3>
+        <p>+3 contra trolls válida até a lua sangrenta.</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    Publicação nº 666 — guarde-se das maldições 🔻
+  </footer>
+</body>
 </html>
