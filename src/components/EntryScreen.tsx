@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { db, ref, get, set } from "../firebase";
+import { db, ref, get, set } from "../../firebase";
 
 interface EntryScreenProps {
   onJoin: (roomId: string, playerName: string, role: 'narrator' | 'player') => void;

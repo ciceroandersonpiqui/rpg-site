@@ -12,17 +12,17 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
-      }
+        '@': path.resolve(__dirname, 'src'), // aponta pra src certinho
+      },
     },
-    base: '/game/',
+    base: '/', // raiz do site, pra funcionar bem no Firebase
     build: {
-      outDir: 'dist/game',
-      emptyOutDir: true
-    }
+      outDir: 'dist', // saída padrão
+      emptyOutDir: true,
+    },
   };
 });
