@@ -1,0 +1,32 @@
+/* Tailwind base (se estiver usando Tailwind) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aura roxa */
+@keyframes pulseGlowPurple {
+  from {
+    box-shadow: 0 0 15px rgba(168,85,247,0.5), 0 0 30px rgba(168,85,247,0.3);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(168,85,247,0.9), 0 0 50px rgba(168,85,247,0.6);
+  }
+}
+
+/* Aura azul */
+@keyframes pulseGlowBlue {
+  from {
+    box-shadow: 0 0 15px rgba(59,130,246,0.5), 0 0 30px rgba(59,130,246,0.3);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(59,130,246,0.9), 0 0 50px rgba(59,130,246,0.6);
+  }
+}
+
+.aura-purple {
+  animation: pulseGlowPurple 2s infinite alternate;
+}
+
+.aura-blue {
+  animation: pulseGlowBlue 2s infinite alternate;
+}
